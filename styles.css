@@ -348,14 +348,15 @@ h3 {
 .hero-media {
   position: relative;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding-top: 24px;
 }
 
 .hero-card {
   width: min(640px, 100%);
-  align-self: end;
+  align-self: center;
 }
 
 .hero-card img {
