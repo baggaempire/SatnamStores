@@ -620,6 +620,11 @@ h3 {
     display: inline-block;
   }
 
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+  }
+
   .main-nav,
   .nav-cta {
     display: none;
