@@ -3,202 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Satnam Stores | Shahibaug Convenience Store</title>
+  <title>Satnam Stores | Your Local Convenience Stop</title>
   <meta
     name="description"
-    content="Satnam Stores is a family-owned convenience store in Shahibaug, Ahmedabad, with ice creams, drinks, chips, sweets, milk items, snacks, and groceries."
+    content="Satnam Stores in Shahibaug, Ahmedabad is your local convenience stop for snacks, cold drinks, ice cream, sweets, and daily essentials."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="promo-strip">
-    Family-owned in Shahibaug, Ahmedabad. Call <a href="tel:+919429133499">+91 94291 33499</a>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Satnam Stores home">
+  <header class="site-header">
+    <div class="header-shell">
+      <a class="brand" href="#top" id="top" aria-label="Satnam Stores home">
         <span class="brand-mark">
-          <img src="./assets/khanda-symbol.webp" alt="Khanda Sahib symbol">
+          <img src="./images/khanda-symbol.webp" alt="Khanda Sahib symbol">
         </span>
-        <span class="brand-text">
+        <span class="brand-copy">
           <strong>Satnam Stores</strong>
           <span>Shahibaug, Ahmedabad</span>
         </span>
       </a>
 
-      <nav class="main-nav" aria-label="Primary">
-        <a href="#favorites">Snacks</a>
-        <a href="#coolers">Drinks</a>
-        <a href="#favorites">Ice Cream</a>
-        <a href="#gallery">Inside Store</a>
-        <a href="#visit">Visit</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#categories">Categories</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Visit</a>
       </nav>
 
-      <div class="nav-cta">
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Satnam+Stores+Shahibaug+Ahmedabad+Gujarat" target="_blank" rel="noreferrer">Find Store</a>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+919429133499">+91 94291 33499</a>
+        <a class="button button-primary" href="https://wa.me/919429133499" target="_blank" rel="noreferrer">Order Online</a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Satnam Stores</p>
-        <h1>Quick picks for Shahibaug.</h1>
-        <p class="hero-subhead">Cold drinks, chips, sweets, ice cream, and daily essentials in one easy neighborhood stop.</p>
-        <p class="hero-text">
-          Inspired by the fast, fun convenience-store feel people love, but rooted in Ahmedabad.
-          Satnam Stores is the Bagga family shop run by S. Chandrajeet Singh Bagga, with ice creams,
-          juices, wafers, candies, milk items, and grocery basics ready for a quick neighborhood stop.
+      <div class="hero-media">
+        <img src="./images/store-front.jpg" alt="Front of Satnam Stores in Shahibaug, Ahmedabad">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content reveal">
+        <ul class="hero-chips" aria-label="Popular categories">
+          <li>Snacks</li>
+          <li>Drinks</li>
+          <li>Ice Cream</li>
+          <li>Sweets</li>
+          <li>Essentials</li>
+        </ul>
+
+        <h1>Your Local Convenience Stop</h1>
+        <p class="hero-lead">
+          Snacks, cold drinks, ice cream, sweets, and daily essentials, everything you need in one spot.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Satnam+Stores+Shahibaug+Ahmedabad+Gujarat" target="_blank" rel="noreferrer">Find a Store</a>
-          <a class="button button-secondary" href="https://wa.me/919429133499" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="button button-warm" href="https://wa.me/919429133499" target="_blank" rel="noreferrer">Order Now</a>
+          <a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=Satnam+Stores+Shahibaug+Ahmedabad+Gujarat" target="_blank" rel="noreferrer">Find Store</a>
         </div>
 
-        <div class="hero-offer">
-          <span class="offer-badge">Local Favorite</span>
-          <div>
-            <strong>Ice creams, cold drinks, snacks, and grocery basics</strong>
-            <p>Quick picks for kids, families, evening cravings, and everyday runs.</p>
+        <div class="hero-note">
+          <strong>Satnam Stores</strong>
+          <span>Your local convenience stop for snacks, cold drinks, ice cream, sweets, and daily essentials.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-categories" id="categories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Top Picks</p>
+        <h2>Check Out Our Bestsellers</h2>
+        <p>Top choices flying off the shelves, ready for quick visits and everyday cravings.</p>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card reveal">
+          <div class="card-image">
+            <img src="./images/snacks.jpg" alt="Snack shelves at Satnam Stores">
+            <span class="card-badge">Top Pick</span>
           </div>
-        </div>
-      </div>
+          <div class="card-body">
+            <h3>Crunchy Snacks</h3>
+            <p>Popular chips, namkeen, biscuits, and munchies for every craving.</p>
+          </div>
+        </article>
 
-      <div class="hero-media">
-        <div class="hero-card">
-          <img src="./assets/store-front.jpeg" alt="Front of Satnam Stores in Shahibaug, Ahmedabad">
-        </div>
+        <article class="category-card reveal">
+          <div class="card-image">
+            <img src="./images/drinks.jpg" alt="Cold drinks fridge at Satnam Stores">
+            <span class="card-badge">Cold Ready</span>
+          </div>
+          <div class="card-body">
+            <h3>Cold Drinks</h3>
+            <p>Refreshing cold drinks, juices, and chilled bottles ready to grab.</p>
+          </div>
+        </article>
+
+        <article class="category-card reveal">
+          <div class="card-image">
+            <img src="./images/namkeen.jpg" alt="Namkeen and snack packets at Satnam Stores">
+            <span class="card-badge">Fast Favorite</span>
+          </div>
+          <div class="card-body">
+            <h3>Snack Chips / Namkeen</h3>
+            <p>Fan-favorite chips and namkeen for tea time, rides home, and quick breaks.</p>
+          </div>
+        </article>
+
+        <article class="category-card reveal">
+          <div class="card-image">
+            <img src="./images/ice-cream.jpg" alt="Store front of Satnam Stores with ice cream signage">
+            <span class="card-badge">Cool Treats</span>
+          </div>
+          <div class="card-body">
+            <h3>Ice Cream Novelties</h3>
+            <p>Cups, cones, bars, and frozen treats for a quick sweet stop.</p>
+          </div>
+        </article>
+
+        <article class="category-card reveal">
+          <div class="card-image">
+            <img src="./images/sweets.jpg" alt="Sweets and biscuit shelf at Satnam Stores">
+            <span class="card-badge">Sweet Shelf</span>
+          </div>
+          <div class="card-body">
+            <h3>Sweets &amp; Biscuits</h3>
+            <p>Chocolate, candy, biscuits, and shelf sweets for little cravings.</p>
+          </div>
+        </article>
+
+        <article class="category-card reveal">
+          <div class="card-image">
+            <img src="./images/interior.jpg" alt="Inside view of Satnam Stores">
+            <span class="card-badge">Everyday Use</span>
+          </div>
+          <div class="card-body">
+            <h3>Daily Essentials</h3>
+            <p>Nearby convenience for regular household needs, small grocery picks, and quick stops.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="category-panel" id="favorites">
-      <div class="category-column">
-        <a href="#gallery">Chips</a>
-        <a href="#gallery">Wafers</a>
-        <a href="#gallery">Namkeen</a>
-        <a href="#gallery">Candies</a>
-      </div>
-      <div class="category-column">
-        <a href="#coolers">Cold Drinks</a>
-        <a href="#coolers">Juices</a>
-        <a href="#coolers">Energy Drinks</a>
-        <a href="#coolers">Milk Items</a>
-      </div>
-      <div class="category-column">
-        <a href="#gallery">Ice Cream</a>
-        <a href="#gallery">Biscuits</a>
-        <a href="#gallery">Groceries</a>
-        <a href="#visit">Neighborhood Essentials</a>
-      </div>
-    </section>
-
-    <section class="feature-band" id="coolers">
-      <article class="feature-card feature-green">
-        <div class="feature-copy">
-          <p class="eyebrow">Cold and ready</p>
-          <h2>Drinks and coolers stocked for hot Ahmedabad days</h2>
-          <p>
-            Soft drinks, juices, chilled bottles, and frozen treats are ready for a fast grab-and-go stop.
-          </p>
-        </div>
-        <img src="./assets/cold-drinks.jpeg" alt="Cold drinks and coolers inside Satnam Stores">
-      </article>
-
-      <article class="feature-card feature-white">
-        <div class="feature-copy">
-          <p class="eyebrow">Shelf favorites</p>
-          <h2>Crunchy snacks, sweets, and small daily picks</h2>
-          <p>
-            Entrance racks are packed with chips, namkeen, candies, biscuits, and quick treats for every mood.
-          </p>
-        </div>
-        <img src="./assets/snacks-racks.jpeg" alt="Snack racks inside Satnam Stores">
-      </article>
-    </section>
-
-    <section class="section section-story" id="about">
-      <div class="section-heading">
+    <section class="section section-why" id="why-us">
+      <div class="section-heading reveal">
         <p class="eyebrow">Why Satnam Stores</p>
-        <h2>Fast convenience, family warmth</h2>
-        <p>
-          The store is built for those moments when you need something now, not later:
-          a cold drink, a chocolate, a snack for the ride home, or a few household basics without a long market trip.
-        </p>
+        <h2>Small store, big everyday usefulness</h2>
       </div>
 
-      <div class="story-grid">
-        <article class="story-card">
-          <h3>Family run</h3>
-          <p>Owned by S. Chandrajeet Singh Bagga and shaped by the kind of friendly neighborhood service people return for.</p>
+      <div class="benefit-grid">
+        <article class="benefit-card reveal">
+          <span class="benefit-icon">01</span>
+          <h3>Quick grab-and-go shopping</h3>
+          <p>Easy to stop, pick what you need, and get back on your way fast.</p>
         </article>
-        <article class="story-card">
-          <h3>Quick to shop</h3>
-          <p>Easy grab-and-go shelves, visible products, and a compact layout that works when you are in a hurry.</p>
+
+        <article class="benefit-card reveal">
+          <span class="benefit-icon">02</span>
+          <h3>Family-friendly variety</h3>
+          <p>Snacks, sweets, drinks, and treats that work for kids and adults alike.</p>
         </article>
-        <article class="story-card">
-          <h3>Everyday mix</h3>
-          <p>Ice creams, drinks, chips, candies, milk items, snacks, and grocery essentials all in one stop.</p>
+
+        <article class="benefit-card reveal">
+          <span class="benefit-icon">03</span>
+          <h3>Everyday essentials nearby</h3>
+          <p>Convenient local access to quick household items without a long market run.</p>
+        </article>
+
+        <article class="benefit-card reveal">
+          <span class="benefit-icon">04</span>
+          <h3>Cold drinks and treats always ready</h3>
+          <p>Chilled bottles and cool picks are ready for hot Ahmedabad days.</p>
         </article>
       </div>
     </section>
 
     <section class="section section-gallery" id="gallery">
-      <div class="section-heading">
-        <p class="eyebrow">Inside Store</p>
-        <h2>Real shelves. Real coolers. Real neighborhood feel.</h2>
+      <div class="section-heading reveal">
+        <p class="eyebrow">In-Store Gallery</p>
+        <h2>A closer look inside Satnam Stores</h2>
       </div>
 
       <div class="gallery-grid">
-        <figure class="gallery-card gallery-large">
-          <img src="./assets/snacks-corner.jpeg" alt="Snack corner with chips and namkeen">
-          <figcaption>Snack racks loaded with colorful chip and namkeen favorites.</figcaption>
+        <figure class="gallery-card reveal gallery-card-large">
+          <img src="./images/snacks.jpg" alt="Snack shelves at Satnam Stores">
+          <figcaption>Shelves packed with chips, wafers, and snack favorites.</figcaption>
         </figure>
-        <figure class="gallery-card">
-          <img src="./assets/store-entry.jpeg" alt="Store entrance with shelves and products">
-          <figcaption>A compact entrance that packs in variety.</figcaption>
+
+        <figure class="gallery-card reveal">
+          <img src="./images/drinks.jpg" alt="Cold drinks section at Satnam Stores">
+          <figcaption>Cold drinks and chilled bottles ready to go.</figcaption>
         </figure>
-        <figure class="gallery-card">
-          <img src="./assets/sweets-shelf.jpeg" alt="Sweets and snack shelf in Satnam Stores">
-          <figcaption>Sweets, biscuits, and pantry-style essentials on hand.</figcaption>
+
+        <figure class="gallery-card reveal">
+          <img src="./images/interior.jpg" alt="Entrance and interior view of Satnam Stores">
+          <figcaption>Quick access layout for fast local shopping.</figcaption>
+        </figure>
+
+        <figure class="gallery-card reveal">
+          <img src="./images/sweets.jpg" alt="Sweets and biscuits at Satnam Stores">
+          <figcaption>Sweets, biscuits, and shelf treats in one corner.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="visit-strip" id="visit">
-      <div class="visit-copy">
-        <p class="eyebrow">Visit Satnam Stores</p>
-        <h2>Your neighborhood convenience stop in Shahibaug</h2>
-        <p>
-          Whether it is for a chilled bottle, a fast snack, a candy treat, or a few daily-use items,
-          Satnam Stores keeps it close, quick, and friendly.
-        </p>
-      </div>
+    <section class="section section-contact" id="contact">
+      <div class="contact-banner reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Visit Satnam Stores Today</p>
+          <h2>Find us for quick, easy, satisfying shopping in Shahibaug</h2>
+          <p>
+            Visit for snacks, drinks, sweets, ice cream, and daily essentials with a friendly local-business feel.
+          </p>
+        </div>
 
-      <div class="visit-meta">
-        <p><strong>Owner</strong><span>S. Chandrajeet Singh Bagga</span></p>
-        <p><strong>Phone</strong><a href="tel:+919429133499">+91 94291 33499</a></p>
-        <p><strong>Location</strong><span>Shahibaug, Ahmedabad, Gujarat</span></p>
-      </div>
+        <div class="contact-meta">
+          <p><strong>Store</strong><span>Satnam Stores</span></p>
+          <p><strong>Area</strong><span>Shahibaug, Ahmedabad</span></p>
+          <p><strong>Phone</strong><a href="tel:+919429133499">+91 9429133499</a></p>
+        </div>
 
-      <div class="visit-actions">
-        <a class="button button-primary" href="tel:+919429133499">Call Now</a>
-        <a class="button button-secondary" href="https://wa.me/919429133499" target="_blank" rel="noreferrer">Message on WhatsApp</a>
+        <div class="contact-actions">
+          <a class="button button-warm" href="tel:+919429133499">Call Now</a>
+          <a class="button button-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Satnam+Stores+Shahibaug+Ahmedabad+Gujarat" target="_blank" rel="noreferrer">Get Directions</a>
+          <a class="button button-light-outline" href="https://wa.me/919429133499" target="_blank" rel="noreferrer">Order Online</a>
+        </div>
       </div>
     </section>
   </main>
 
+  <a class="floating-action" href="https://wa.me/919429133499" target="_blank" rel="noreferrer">Order Online</a>
+
   <footer class="site-footer">
-    <p>Satnam Stores, Ahmedabad</p>
-    <a href="#top">Back to top</a>
+    <div>
+      <strong>Satnam Stores</strong>
+      <p>Shahibaug, Ahmedabad</p>
+    </div>
+    <div>
+      <a href="tel:+919429133499">+91 9429133499</a>
+      <a href="#categories">Categories</a>
+      <a href="#contact">Visit</a>
+      <a href="#top">Back to top</a>
+    </div>
+    <p>© <span id="year"></span> Satnam Stores. All rights reserved.</p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
