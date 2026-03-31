@@ -199,14 +199,14 @@ a {
   grid-template-columns: 0.9fr 1.1fr;
   align-items: stretch;
   min-height: 560px;
+  margin-top: 0;
   background: linear-gradient(180deg, var(--green) 0 72%, var(--black) 72% 100%);
 }
 
 .hero-copy {
-  padding: 48px 40px 34px;
+  padding: 36px 40px 44px;
   color: #fff;
   align-self: start;
-  padding-top: 36px;
 }
 
 .eyebrow {
@@ -264,14 +264,15 @@ h3 {
 
 .hero-text {
   max-width: 52ch;
-  margin: 12px 0 22px;
+  margin: 12px 0 18px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.92rem;
   line-height: 1.55;
 }
 
 .hero-text-secondary {
-  margin-top: -6px;
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .hero-actions,
@@ -314,7 +315,7 @@ h3 {
   grid-template-columns: auto 1fr;
   gap: 14px;
   align-items: start;
-  margin-top: 22px;
+  margin-top: 18px;
   max-width: 480px;
 }
 
@@ -359,7 +360,7 @@ h3 {
 
 .hero-card img {
   width: 100%;
-  max-height: 470px;
+  max-height: 458px;
   object-fit: cover;
   object-position: center;
 }
@@ -368,7 +369,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  padding: 42px 40px 46px;
+  padding: 34px 40px 40px;
   background: #fff;
 }
 
@@ -392,7 +393,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 24px 0 10px;
+  padding: 26px 0 8px;
 }
 
 .feature-card {
@@ -439,12 +440,12 @@ h3 {
 }
 
 .section {
-  padding: 52px 0 24px;
+  padding: 44px 0 18px;
 }
 
 .section-heading {
   max-width: 64ch;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .section-heading .eyebrow {
@@ -463,6 +464,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+  align-items: stretch;
 }
 
 .story-card {
@@ -487,6 +489,7 @@ h3 {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
   gap: 18px;
+  align-items: stretch;
 }
 
 .gallery-card {
@@ -528,9 +531,9 @@ h3 {
   grid-template-columns: 1.15fr 0.85fr 0.8fr;
   gap: 24px;
   align-items: center;
-  margin-top: 44px;
-  margin-bottom: 36px;
-  padding: 34px 32px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  padding: 30px 32px;
   background: #fff;
   border-radius: 24px;
   box-shadow: var(--shadow);
@@ -563,7 +566,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 0 0 36px;
+  padding: 8px 0 32px;
   color: var(--gray-strong);
 }
 
@@ -679,7 +682,7 @@ h3 {
   }
 
   .hero-copy {
-    padding: 38px 20px 24px;
+    padding: 30px 20px 24px;
   }
 
   .category-panel,
@@ -690,7 +693,7 @@ h3 {
   }
 
   .category-panel {
-    padding: 28px 20px 32px;
+    padding: 24px 20px 28px;
   }
 
   .category-column a {
@@ -725,7 +728,9 @@ h3 {
   }
 
   .visit-strip {
-    padding: 24px 20px;
+    margin-top: 24px;
+    margin-bottom: 22px;
+    padding: 22px 20px;
   }
 
   .site-footer {
