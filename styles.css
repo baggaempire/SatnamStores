@@ -187,7 +187,14 @@ a {
 }
 
 .nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   white-space: nowrap;
+}
+
+.nav-whatsapp {
+  color: var(--green);
 }
 
 .site-header.is-scrolled {
@@ -200,13 +207,15 @@ a {
   align-items: stretch;
   min-height: 560px;
   margin-top: 0;
-  background: linear-gradient(180deg, var(--green) 0 72%, var(--black) 72% 100%);
+  background: var(--green);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .hero-copy {
-  padding: 36px 40px 44px;
+  padding: 28px 40px 30px;
   color: #fff;
-  align-self: start;
+  align-self: center;
 }
 
 .eyebrow {
@@ -264,7 +273,7 @@ h3 {
 
 .hero-text {
   max-width: 52ch;
-  margin: 12px 0 18px;
+  margin: 12px 0 14px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.92rem;
   line-height: 1.55;
@@ -272,14 +281,7 @@ h3 {
 
 .hero-text-secondary {
   margin-top: 0;
-  margin-bottom: 22px;
-}
-
-.hero-actions,
-.visit-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  margin-bottom: 0;
 }
 
 .button {
@@ -310,48 +312,13 @@ h3 {
   border: 2px solid rgba(255, 255, 255, 0.55);
 }
 
-.hero-offer {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px;
-  align-items: start;
-  margin-top: 18px;
-  max-width: 480px;
-}
-
-.offer-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 112px;
-  min-height: 40px;
-  padding: 0 14px;
-  border-radius: 999px;
-  background: var(--orange);
-  color: #fff;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 0.76rem;
-}
-
-.hero-offer strong {
-  display: block;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 0.95rem;
-}
-
-.hero-offer p {
-  margin: 4px 0 0;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: 0.92rem;
-}
-
 .hero-media {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 24px;
+  padding: 18px 0;
 }
 
 .hero-card {
@@ -361,7 +328,7 @@ h3 {
 
 .hero-card img {
   width: 100%;
-  max-height: 458px;
+  max-height: 420px;
   object-fit: cover;
   object-position: center;
 }
@@ -370,31 +337,45 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  padding: 34px 40px 40px;
-  background: #fff;
+  padding: 26px 30px 28px;
+  background: rgba(16, 16, 16, 0.96);
+  width: calc(100% - 64px);
+  max-width: none;
+  margin: 22px auto 0;
+  position: relative;
+  z-index: 3;
+  justify-items: center;
+  align-items: start;
+  border-radius: 24px;
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.24);
 }
 
 .category-column {
   display: grid;
-  gap: 20px;
+  gap: 16px;
+  width: 100%;
 }
 
 .category-column a {
   text-decoration: none;
   font-family: "Archivo Black", sans-serif;
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 0.95;
+  font-size: clamp(1.15rem, 1.85vw, 2.1rem);
+  line-height: 0.98;
+  color: #fff;
+  text-shadow: none;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
 .category-column a:hover {
-  color: var(--orange);
+  color: #ffd08c;
+  transform: translateX(2px);
 }
 
 .feature-band {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 26px 0 8px;
+  padding: 34px 0 12px;
 }
 
 .feature-card {
@@ -441,7 +422,7 @@ h3 {
 }
 
 .section {
-  padding: 44px 0 18px;
+  padding: 40px 0 16px;
 }
 
 .section-heading {
@@ -532,8 +513,8 @@ h3 {
   grid-template-columns: 1.15fr 0.85fr 0.8fr;
   gap: 24px;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 28px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   padding: 30px 32px;
   background: #fff;
   border-radius: 24px;
@@ -567,7 +548,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 8px 0 32px;
+  padding: 6px 0 28px;
   color: var(--gray-strong);
 }
 
@@ -602,7 +583,7 @@ h3 {
   }
 
   .hero-card img {
-    max-height: 520px;
+    max-height: 460px;
   }
 
   .feature-band,
@@ -657,7 +638,8 @@ h3 {
 
   .nav-cta.is-open {
     width: 100%;
-    display: block;
+    display: grid;
+    gap: 10px;
     margin-top: 10px;
   }
 
@@ -683,7 +665,7 @@ h3 {
   }
 
   .hero-copy {
-    padding: 30px 20px 24px;
+    padding: 26px 20px 18px;
   }
 
   .category-panel,
@@ -694,7 +676,9 @@ h3 {
   }
 
   .category-panel {
-    padding: 24px 20px 28px;
+    width: min(100% - 20px, 700px);
+    margin: 16px auto 0;
+    padding: 18px 18px 20px;
   }
 
   .category-column a {
@@ -711,21 +695,12 @@ h3 {
     height: 280px;
   }
 
-  .hero-actions,
-  .visit-actions {
-    flex-direction: column;
-  }
-
   .hero-subhead {
     max-width: 100%;
   }
 
   .button {
     width: 100%;
-  }
-
-  .hero-offer {
-    grid-template-columns: 1fr;
   }
 
   .visit-strip {
